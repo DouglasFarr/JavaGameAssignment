@@ -1,0 +1,22 @@
+import becker.robots.*;
+
+public class CaptainBot extends RobotSE
+{
+  public CaptainBot(City theCity, int avenue, int street, becker.robots.Direction aDirection)
+{ super(theCity, avenue, street, aDirection);
+    
+   
+  }
+
+  public void botDie()
+  {
+   int i = 2;
+   while (i > 0.25)
+   {
+   i = i/2;
+   turnAround();
+   this.setSpeed(i);
+   }
+ }
+
+}

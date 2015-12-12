@@ -1,0 +1,112 @@
+import junit.framework.TestCase;
+import becker.robots.*;
+import java.awt.Color;
+
+
+/**
+ * A JUnit test case class.
+ * Every method starting with the word "test" will be called when running
+ * the test with JUnit.
+ */
+public class Test extends TestCase {
+  
+  //  private Game testGame = new Game();
+  
+  City testCity = new City(11,16);
+  
+  /**
+   * A test method.
+   * (Replace "X" with a name describing the test.  You may write as
+   * many "testSomething" methods in this class as you wish, and each
+   * one will be called when running JUnit over this class.)
+   */ 
+  
+  
+  
+  //TEST AI_BOT CLASS  **********************************************************************************************
+//  public void test_AI_Bot() {
+//    
+//    Room aRoom;
+//    AI_Bot testBot = new AI_Bot(testCity, 3, 3, becker.robots.Direction.WEST, 1, Color.blue,);
+//    
+//    //TEST botGiveItem
+//    Intersection startPos;
+//    
+//    startPos = testBot.getIntersection();
+//    
+//    testBot.botGiveItem();
+//    
+//    assertTrue("Robot dropped item", testBot.countThingsInBackpack() == 0);
+//    assertTrue("Robot incorrect position after .botGiveItem()", testBot.getIntersection() == startPos);
+//    
+//    
+//    //TEST botDie
+//    startPos = testBot.getIntersection();
+//    
+//    testBot.botDie();
+//    
+//    assertTrue("Robot incorrect position after .botDie()", testBot.getIntersection() == startPos);
+//    // assertTrue("Robot incorrect colour using .botDie()", testBot.getColor() == Color.darkGray); ???
+//    
+//    
+//  }
+
+//TEST MyBot CLASS  **********************************************************************************************
+   public void test_myBot() {
+    
+     //MyBot(testCity, 6, 6, becker.robots.Direction.WEST);
+
+   }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  //STUFFFFFF
+  
+//  
+//  /**
+//   * A test method.
+//   * Test when walks into 
+//   * @Test(expected = ExpectedException.class)
+//   */
+//  public void testMoveIntoWall() {
+//    
+//    testGame.move(); 
+//    
+//  }
+//  
+//   public void testStoreItem() {
+    
+//  testGame.getItemString();  
+//  }  
+//  /**
+//   * A test method.
+//   * Test when walks into wall
+//   */
+//  public void testMove() {
+//    
+//    
+//    
+////    Command i = new Command("turn", "around");
+////     
+////    testGame.turn(i);
+//    testGame.move(); 
+//    
+//  } 
+//  
+//  public void testTesing() {
+//    
+//  assertTrue(false);
+//    
+//  }
+
+    
+    
+    
+    
+}

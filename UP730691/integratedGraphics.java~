@@ -1,0 +1,50 @@
+//Fetching the newspaper
+import becker.robots.*;
+
+public class integratedGraphics
+{
+   public static void integratedGraphics(boolean exitNorth, boolean exitSouth, boolean exitEast, boolean exitWest )
+   {  
+   // Set up the initial situation
+      City pompey = new City();
+      Robot robbie = new Robot(pompey, 2, 2, becker.robots.Direction.SOUTH);
+      Thing paper = new Thing(pompey, 2, 2);
+      //top
+      Wall wall1 = new Wall(pompey, 1, 1, becker.robots.Direction.NORTH);
+      Wall wall3 = new Wall(pompey, 1, 3, becker.robots.Direction.NORTH);
+      //bottom
+      Wall wall4 = new Wall(pompey, 3, 1, becker.robots.Direction.SOUTH);
+      Wall wall6 = new Wall(pompey, 3, 3, becker.robots.Direction.SOUTH);
+      //sides
+      Wall wall7 = new Wall(pompey, 1, 3, becker.robots.Direction.EAST);
+      Wall wall9 = new Wall(pompey, 3, 3, becker.robots.Direction.EAST);
+      
+      Wall wall10 = new Wall(pompey, 1, 1, becker.robots.Direction.WEST);
+      Wall wall12 = new Wall(pompey, 3, 1, becker.robots.Direction.WEST);
+      
+       //exits
+       Wall northWall = new Wall(pompey, 1, 2, becker.robots.Direction.NORTH);
+       Wall southWall = new Wall(pompey, 3, 2, becker.robots.Direction.SOUTH);
+       Wall eastWall = new Wall(pompey, 2, 3, becker.robots.Direction.EAST);
+       Wall westWall = new Wall(pompey, 2, 1, becker.robots.Direction.WEST);
+
+  // Direct the robot to the final situation
+      robbie.turnLeft();
+      robbie.turnLeft();
+      for(int i = 0; i<3; i = i+1)
+      {robbie.turnLeft();
+      robbie.move();
+        }
+      robbie.pickThing();
+      robbie.turnLeft();
+      robbie.turnLeft();
+      //go back
+       for(int i = 0; i<3; i = i+1)
+      {  robbie.move();
+         robbie.turnLeft(); 
+         robbie.turnLeft();
+         robbie.turnLeft();
+        }
+         robbie.putThing();
+          }
+    }
